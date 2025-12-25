@@ -1,0 +1,7 @@
+
+GOOGLE_API_KEY=AIzaSyB4A-p55hXwoW3buCQ9gMpGvgOggLfw9Ek
+MONGODB_URI=mongodb+srv://codrix:nds9u84uir98rvbn8h93490udjoi@cluster0.xhho8ns.mongodb.net/?appName=Cluster0
+JWT_SECRET_KEY=8418cad1d33bafe7ada144b1e41946018938b61ed5c6b370f7455e3fc67a8c9c
+DEBUG=true
+HOST=0.0.0.0
+PORT=8000
