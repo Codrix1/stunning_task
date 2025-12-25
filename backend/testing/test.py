@@ -1,4 +1,5 @@
-from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
+from langchain.schema import HumanMessage, SystemMessage, AIMessage
+
 from langchain_google_genai import GoogleGenerativeAI
 from dotenv import load_dotenv
 from langfuse.callback import CallbackHandler
