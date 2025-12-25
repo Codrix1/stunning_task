@@ -46,7 +46,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onSend, isLoading }) => {
           <div className="text-center p-6 rounded-2xl bg-card/50 border border-border/50">
             <Rocket className="h-8 w-8 text-primary mx-auto mb-4" />
             <h3 className="font-semibold mb-2">Get Better Results</h3>
-            <p className="text-sm text-muted-foreground">Create prompts that deliver exactly what you want</p>
+            <p className="text-sm  text-muted-foreground">Create prompts that deliver exactly what you want</p>
           </div>
         </div>
       </div>
