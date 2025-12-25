@@ -1,21 +1,25 @@
 # FastAPI server
 fastapi==0.110.0
 uvicorn[standard]==0.29.0
-
-# MongoDB
 pymongo[srv]==4.7.3
 
-# LangChain
-langchain==0.3.21
-langchain-google-genai==2.0.2
+# Minimal LangChain core required by MongoDB and Google integration
+langchain-core>=0.3.13,<0.4
+
+# MongoDB integration
 langchain-mongodb==0.2.0
 
+# Google Generative AI
+langchain-google-genai==2.0.2
+google-generativeai==0.8.3
 
 # Environment variables
 python-dotenv==1.0.1
 
-# Data validation
+# Async HTTP & data validation
 pydantic==2.7.4
+
+
 
 # Authentication
 PyJWT==2.8.0
