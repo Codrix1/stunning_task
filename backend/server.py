@@ -28,7 +28,7 @@ app = FastAPI(
 
 # CORS configuration for development
 origins = [
-    "https://stunning-task-xt68.vercel.app",
+    "https://stunning-task-eight.vercel.app",
     "http://localhost:3000",
     "http://localhost:5173",
     "http://localhost:5174",

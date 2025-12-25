@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { chatService } from "@/services/chatService";
@@ -15,14 +15,6 @@ const Chat: React.FC = () => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
   const [localMessages, setLocalMessages] = useState<Message[]>([]);
-
-  // Redirect to main page on page reload
-  useEffect(() => {
-    const navigationEntry = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
-    if (navigationEntry?.type === 'reload') {
-      navigate('/', { replace: true });
-    }
-  }, [navigate]);
 
   // Fetch chat list
   const { data: chats = [], isLoading: chatsLoading } = useQuery({
