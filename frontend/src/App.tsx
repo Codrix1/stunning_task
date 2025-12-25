@@ -9,7 +9,7 @@ import Login from "./pages/Login";
 import Chat from "./pages/Chat";
 import ProtectedRoute from "./components/ProtectedRoute";
 import NotFound from "./pages/NotFound";
-import ReloadRedirect from "./components/ReloadRedirect";
+import ReloadRedirect from "@/components/ReloadRedirect";
 
 const queryClient = new QueryClient({
   defaultOptions: {
